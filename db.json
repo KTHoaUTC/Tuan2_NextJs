@@ -1,0 +1,30 @@
+{
+  "product": [
+    {
+      "key": "1",
+      "id": "1",
+      "name": "Quần dài",
+      "soluong": 32,
+      "mota": "Đẹp",
+      "trangthai": ["nice", "developer"]
+    },
+    {
+      "key": "2",
+      "id": "2",
+      "name": "Quần dài",
+      "soluong": 32,
+      "mota": "Đẹp",
+      "trangthai": ["nice", "developer"]
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
