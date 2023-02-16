@@ -36,7 +36,13 @@ const items: MenuItem[] = [
     </Link>
   ),
   getItem("Khuất Thị Hoa", "sub1", <UserOutlined />, [
-    getItem("My Profile", "2"),
+    getItem(
+      "My Profile",
+      "2",
+      <Link href={"/admin/ProFile"}>
+        <PieChartOutlined />
+      </Link>
+    ),
     getItem("Settings", "3"),
   ]),
   // getItem('Dashboard', '4', <DesktopOutlined />),

@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Checkbox, Form, Input } from "antd";
+import { FacebookOutlined, GooglePlusOutlined } from "@ant-design/icons";
 
 const onFinish = (values: any) => {
   console.log("Success:", values);
@@ -27,15 +28,17 @@ const LogoutAdmin: React.FC = () => (
     >
       <Input />
     </Form.Item>
-
     <Form.Item
       label="Password"
       name="password"
       rules={[{ required: true, message: "Please input your password!" }]}
     >
       <Input.Password />
+      <a className="ForgotPassword">
+        {" "}
+        <i> Forgot your password?</i>
+      </a>
     </Form.Item>
-
     <Form.Item
       name="remember"
       valuePropName="checked"
@@ -43,11 +46,21 @@ const LogoutAdmin: React.FC = () => (
     >
       <Checkbox>Remember me</Checkbox>
     </Form.Item>
-
     <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
       <Button type="primary" htmlType="submit">
         Login
       </Button>
+    </Form.Item>
+    <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+      <p> Or Login with: </p>
+      <div className="iconLogin">
+        <a className="iconFacebook">
+          <FacebookOutlined />
+        </a>
+        <a className="iconGoogle">
+          <GooglePlusOutlined />
+        </a>
+      </div>
     </Form.Item>
   </Form>
 );
